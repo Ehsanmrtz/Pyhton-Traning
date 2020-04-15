@@ -12,4 +12,5 @@ while True:
         if letter in v:
             found[letter] += 1
     for k, v in found.items():
-        print(k, 'Was Found', v, 'times(s).')
+        if v > 0:
+            print(k, 'Was Found', v, 'times(s).')
